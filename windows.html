@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html style="cursor: url(main.cur), auto;">
+    <head>
+        <title> Wild OS</title>
+        <link rel="icon" type="image/gif/png" href="system/images/doc/wildlogo.png">
+        <script src="system/scripts/dockappender.js"></script>
+        <script src="system/scripts/dockappender.js"></script>
+        <script src="system/scripts/notiflicationbrodcaster.js"></script>
+        <script src="appcenterdisplay.js"></script>
+        <script src="dockhover.js"></script>
+        <link href="main-rule.css" rel="stylesheet">
+    </head>
+    <body style="background-color: blue; background-image: url(system/images/windowsback.jpg); background-size: cover;" onload="opendock(), starthover() " >
+        Windows 10 UI is a "Work in Progress". Please use <a href="main.html">Wild OS UI</a>.
+        <br>
+        <a href="main.html">Use Wild OS UI</a>
+        
+        
+        <div id="appswindows" style="background-color: black; width: 20vw; height: 25vw; position: relative;  right: 0.35vw;top: 26.4vw; display: none; z-index: 200;"> 
+        
+            <img src="system/images/apps/wildandrare.png" style="width: 2vw; height: 2vw;" onmouseover ="enterhoverapp('Wild and Rare')"  onclick="seeandcomplete(), okay('system/images/apps/wildandrare.png', '2vw', '2vw', 'WildandRare',  'https://wildandrare.github.io/wildandrare/index.html')  ">
+            
+            <img src="system/images/apps/functioner.png" style="width: 2vw; height: 2vw;" onmouseover ="enterhoverapp('Functions')" onclick="seeandcomplete(), okay('system/images/apps/functioner.png', '2vw', '2vw', 'Functions',  'https://snake.io')')  " > 
+            
+            <img src="amongusai.png" style="width: 2vw; height: 2vw;" onmouseover ="enterhoverapp('Among Us AI - By KevinGames') "  onclick="seeandcomplete(), okay('amongusai.png', '2vw', '2vw', 'AmongUsAI',  'https://amongusplay.online')    ">
+            <img src="snakeio.png" style="width: 2vw; height: 2vw;" onmouseover ="enterhoverapp('Snake IO') "  onclick="seeandcomplete(), okay('snakeio.png', '2vw', '2vw', 'SnakeIO',  'https://snake.io')  ">
+            <img src="downloads.png" style="width: 2vw; height: 2vw;" onmouseover ="enterhoverapp('Downloads') "  onclick="seeandcomplete(), okay('downloads.png', '2vw', '2vw', 'Downloads',  'settingsapp.html')  ">
+            
+            
+            <div style="width: 4vw; height: 4vw; background-color: rgba(128, 128, 128, 0.36); border-radius: 25px; position: relative;  right:-86vw; top: -10.3vw" onclick="seeandcomplete()"></div>
+        </div>
+        
+
+        <audio id="myAudio">
+  <source src="startup.mp4" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+        
+        
+        
+        
+        
+        
+                <div id="windowsdock"  onmouseout ="opena()" style="z-index: 200;">
+            <img src="system/images/doc/windowslogo.png" style="width: 2vw; height: 2vw; position: absolute;left:1vw; " id="logodock" onclick="seeandcompletewindows()">
+                    <input style="width: 9vw; height: 1.7vw; border-radius: 0vw; border-color: black; background-color: white; position: absolute; left: 3.5vw; font-family: Calibri;" placeholder="Search the web and Windows">
+                    <p style="width: 2vw; height: 2vw; position: absolute;right:0vw; color: white; font-family: Calibri; top: -0.645vw;">0:00 AM</p>
+        </div>
+        
+        
+        
+    </body>
+</html>

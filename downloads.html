@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aliceblue;
+            }
+table {
+  font-family: 'Inter Light', sans-serif;
+  border-collapse: collapse;
+    
+    border: 5px solid #dddddd ;
+    border-radius: 25px;
+  width: 100%;
+}
+
+td, th {
+  border: 5px solid #dddddd ;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #5d5d5d; 
+    border: 5px solid #dddddd ;
+    border-radius: 25px;
+}
+            
+            a {
+                position: sticky;
+            }
+</style>
+    </head>
+    <body width="100%" height="100%">
+       <p>To download an app, go to the  <b style="text-decoration: underline;">installer</b>, and put in the download code of your desired app.</p>
+    <table>
+  <tr>
+    <th>Name</th>
+    <th>Download Code</th>
+     <th>By</th>
+      <th>Category</th>
+  </tr>
+        <tr>
+    <td>Wild and Rare Website</td>
+    <td>a21</td>
+    <td>Wild and Rare</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Among Us AI</td>
+    <td>y98</td>
+    <td>Kevin Games</td>
+    <td>Games</td>
+  </tr>
+  <tr>
+    <td>Math Educator</td>
+    <td>t24</td>
+    <td>Wild and Rare</td>
+    <td>Education</td>
+  </tr>
+</table>
+        <script src="downloadcodes.js">
+        </script>
+        <a>Download an App</a>
+        
+        
+        
+        
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+        <h1>Text to Speech Converter</h1>
+
+        <textarea id="txt" cols="10" rows="10"></textarea>
+        <input onclick="speakText()" type="button" value="submit">
+
+        <script>
+            function speakText(){
+                var text = document.getElementById('txt').value;
+                responsiveVoice.speak(text);
+                
+            }
+        </script>
+    </body>
+</html>
+    </body>
+</html>

@@ -1,0 +1,172 @@
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: red;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+@font-face {
+  font-family: InterBlack;
+  src: url(fonts/Inter-Black.ttf);
+}
+
+@font-face {
+  font-family: InterThin;
+  src: url(fonts/Inter-Thin.ttf);
+}
+
+
+#welcome{
+    background-color: darkorange;
+    width: 99vw;
+    height: 8vw;
+    position: absolute;
+    bottom: 50%;
+    font-family: InterThin;
+    display: block;
+    animation-name: animationstart;
+    animation-duration: 2s;
+    cursor: url(main.cur), auto;
+}
+
+#actcode{
+    background-color: darkorange;
+    width: 99vw;
+    height: 4vw;
+    position: absolute;
+    bottom: 50%;
+    font-family: InterThin;
+    display: none;
+}
+
+#startbody {
+    background-color: #b7b7b7;
+    font-family:'Inter Thin';
+}
+
+button {
+    width: 99vw;
+    border-radius: 15px;
+    background-color: rgb(245, 255, 0);
+    border-color: red;
+    border-style: solid;
+    font-family: InterBlack;
+    vertical-align: bottom;
+}
+
+input {
+    width: 99vw;
+    border-radius: 15px;
+    background-color: #f5ff00;
+    border-color: red;
+    border-style: solid;
+    font-family: InterBlack;
+}
+
+@keyframes animationstart {
+    0% {bottom: 100%;}
+    100% {bottom: 50%;}
+}
+
+#uichoose{
+    background-color: darkorange;
+    width: 99vw;
+    height: 5vw;
+    position: absolute;
+    bottom: 50%;
+    font-family: InterBlack;
+    display: none;
+}
+
+#codeapply{
+    background-color: darkorange;
+    width: 99vw;
+    height: 5vw;
+    position: absolute;
+    bottom: 50%;
+    font-family: InterBlack;
+    display: none;
+}
+
+#gettingready{
+    background-color: darkorange;
+    width: 99vw;
+    height: 5vw;
+    position: absolute;
+    bottom: 50%;
+    font-family: InterBlack;
+    display: none;
+}
+
+#mainbody {
+  background-color: #0080ff;
+  background-image: url(https://www.publicdomainpictures.net/pictures/20000/velka/orangeyellow-background-1328283264Q9r.jpg);
+    background-size: cover;
+    font-family: InterBlack;
+    cursor: url(wildosbmp.cur);
+}
+
+#dock {
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 11vw;
+    position: absolute;
+    right: 0vw;
+    top: -9.5vw;
+    cursor: url(wildosbmp.cur), auto;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+#windowsdock {
+    background-color: rgba(0, 0, 0, 0.86);
+    width: 100vw;
+    height: 2vw;
+    position:absolute;
+    right: 0vw;
+    top: 96.45%;
+    cursor: url(wildosbmp.cur), auto;
+}
+
+@keyframes animationntf {
+    0% {background-color: rgba(255, 255, 255, 0.15); color: rgba(255, 255, 255, 0.15); border-color: rgba(255, 255, 255, 0.15);}
+    100% {background-color: red; color:black; border-color: orange}
+}
+
+@keyframes animationdoc {
+    0% {margin-bottom:  -9.5vw;}
+    100% {margin-bottom: 10vw}
+}
+
+#codesub {
+    font-family: 'Inter Light';
+    font-style:italic;
+}
+
+#dock:hover {
+    margin-top:  9vw;
+}
+
+#dropdown:hover {
+   opacity: 0;
+}
+
+@keyframes openopacity {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes closeopacity {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+#timewidget:hover {
+    width: 1vw;
+}
+
+
+#apps:hover {
+    background-color: aqua;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script src="dockhover.js"></script>
+        <link href="main-rule.css" rel="stylesheet">
+    </head>
+    <body style="background-color: aliceblue;">
+        <style>
+            #set {
+                width: 20vw;
+                height: 46.5vw;
+                font-size: 2vw;
+                background-color: #ebebeb;
+                border-width: 1px;
+                border-style: solid;
+                position: relative;
+                top: 5vw;
+                font-family: InterBlack;
+            }
+            #settings {
+                background-color: aqua;
+                width: 50vw;
+                height: 46vw;
+                                position: relative;
+                top: 6.8vw;
+                right: -24.6vw;
+                      font-family: InterBlack;
+            }
+            #background_personalization {
+                border-radius: 0;
+                font-family: InterBlack;
+                
+            }
+            
+
+        </style>
+        <ul style="list-style-type: none; float: left; position: absolute;">
+            <select id="set">
+                <option>Personalization</option>
+                <option>Display</option>
+                <option disabled>Language</option>
+                <option>Time</option>
+                <option>Dock</option>
+            </select>
+            <li>Personalization</li>
+            <li>Display</li>
+             <li>Language</li>
+            <li>Time</li>
+            <li>Dock</li>
+        </ul>
+        <div id="settings">
+        Personalization
+            <br>
+            <br>
+            <div>Background:  <select id="background_personalization">
+                    <option>Solid Color</option>
+                <option>Gradient</option>
+                <option>Image</option>
+                </select></div>
+
+        </div>
+    </body>
+</html>

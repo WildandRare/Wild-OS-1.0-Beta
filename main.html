@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html style="cursor: url(wildosbmp.cur), auto;">
+    <head>
+        <title> Wild OS</title>
+
+        <link rel="icon" type="image/gif/png" href="system/images/doc/wildlogo.png">
+        <script src="system/scripts/dockappender.js"></script>
+        <script src="system/scripts/dockappender.js"></script>
+        <script src="system/scripts/notiflicationbrodcaster.js"></script>
+        <script src="appcenterdisplay.js"></script>
+        <script src="dockhover.js"></script>
+         <script src="checkifsetup.js"></script>
+        <link href="main-rule.css" rel="stylesheet">
+        
+                                <div style="height: 1000vw; width: 100%; background-color: black; z-index: 10; color: white; font-family: InterBlack; " id="checkno">
+                                    <br>
+                                    <br>
+            Please enter your activation code here.
+                            <input type="text" maxlength="3"; id="actcodeinput" onkeydown="checkcode()">
+        </div>
+        
+        <div id="dock"  onmouseout ="opena()" style="">
+            <img src="system/images/doc/dropdown.svg" style="width: 2vw; height: 5vw; position: absolute; top: 7.7vw; margin-left: 46.5%; z-index: -1;" id="dropdown">
+            <img>
+            <img src="system/images/doc/wildlogo.png" style="width: 2vw; height: 2vw; position: absolute; top: 5vw; margin-left: 46.4%" id="logodock" onclick="seeandcomplete()">
+        </div>
+    </head>
+    <body id="mainbody" onload="opendock(), starthover(), myFunction(), activatecheck(), displaycode()" style="background-color: orange;"  >
+
+        <div id="apps" style="background-color: floralwhite; width: 90vw; height: 40vw; position: relative;  right: -5vw; border-radius: 25px; top: 2vw; display: none; z-index: 200;"> 
+        
+            <img src="system/images/apps/wildandrare.png" style="width: 10vw; height: 10vw;" onmouseover ="enterhoverapp('Wild and Rare')"  onclick="seeandcomplete(), okay('system/images/apps/wildandrare.png', '2vw', '2vw', 'WildandRare',  'https://wildandrare.github.io/wildandrare/index.html')  ">
+            
+            <img src="system/images/apps/functioner.png" style="width: 10vw; height: 10vw;" onmouseover ="enterhoverapp('Functions')" onclick="seeandcomplete(), okay('system/images/apps/functioner.png', '2vw', '2vw', 'Functions',  'functions.html')  " > 
+            
+            <img src="amongusai.png" style="width: 10vw; height: 10vw;" onmouseover ="enterhoverapp('Among Us AI - By KevinGames') "  onclick="seeandcomplete(), okay('amongusai.png', '2vw', '2vw', 'AmongUsAI',  'https://amongusplay.online')    ">
+            <img src="snakeio.png" style="width: 10vw; height: 10vw;" onmouseover ="enterhoverapp('Snake IO') "  onclick="seeandcomplete(), okay('snakeio.png', '2vw', '2vw', 'SnakeIO',  'https://snake.io')  ">
+            <img src="downloads.png" style="width: 10vw; height: 10vw;" onmouseover ="enterhoverapp('Downloads') "  onclick="seeandcomplete(), okay('downloads.png', '2vw', '2vw', 'Downloads',  'settingsapp.html')  ">
+
+            
+            <div style="width: 4vw; height: 4vw; background-color: rgba(128, 128, 128, 0.36); border-radius: 25px; position: relative;  right:-86vw; top: -10.3vw" onclick="seeandcomplete()"></div>
+        </div>
+                    <div id="timewidget"style="background-color: red; width: 10vw; height: 5vw; vertical-align: bottom; bottom: 1vw; position: absolute; border-radius: 10px; background-image: linear-gradient(200deg, orange, #ff6c00); opacity: 10px; z-index: -1; animation: "></div>
+        
+        
+        
+                    <div id="wildassistantwidget"style="background-color: red; width: 10vw; height: 5vw; vertical-align: bottom; bottom: 1vw; position: absolute; border-radius: 10px; background-image: linear-gradient(200deg, yellow, #ff6c00); opacity: 10px; left: 12vw; z-index: -1;">
+        
+        
+                        <textarea style="width: 7vw; border-radius: 0vw; background-color: orangered; height: 4.75vw; vertical-align:text-top; resize: none; border-bottom-left-radius: 10px; border-top-left-radius: 10px; animation-name: scale; animation-duration: 2s; " placeholder="Talk to Wild Assistant" onkeyup="this.value = 'This currently does not work. Wild assistant is not fully developed.';" onclick="callNotiflication('Wild assistant is a work in progress.');"></textarea>
+        
+        </div>
+        
+        
+<script>
+function myFunction() {
+  setInterval(function(){
+                                  var d = new Date();
+var h = d.getHours();
+      var n = d.getMinutes();
+    var hd;
+      var md;
+      var td;
+      if (h > 12) {
+          hd = h - 12;
+      } else {
+          hd = h;
+      }
+      
+            if (h > 11) {
+          td = "PM";
+      } else {
+          td = "AM";
+      }
+      
+      md = 7 + '0';
+      if (n < 10) {
+          md = '0' + n;
+      } else {
+          md = n;
+      }
+  var n = d.getMinutes();
+            document.getElementById('timewidget').innerHTML = `<h1 style="font-size: 2vw;">${hd} : ${md} <p style="font-size: 0.5vw;;"> ${td}</p> </h1>`;
+  }, 1);
+}
+      
+
+        </script>
+        
+        <style>
+            #timewidget:hover {
+    height: 10vw;
+}
+        </style>
+        
+        
+
+
+
+
+        
+        
+        
+        
+        
+    </body>
+</html>
